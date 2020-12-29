@@ -27,7 +27,7 @@
     <MapFileExtensions>false</MapFileExtensions>
     <PublisherName>РРЦ МЗ ДНР</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -236,6 +236,7 @@
     <None Include="Resources\print_118761.png" />
     <None Include="Resources\excel_theapplication_3130.png" />
     <None Include="Resources\gear_icon-icons.com_70125.png" />
+    <None Include="Resources\settings-cogwheel-button_icon-icons.com_72559.png" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>

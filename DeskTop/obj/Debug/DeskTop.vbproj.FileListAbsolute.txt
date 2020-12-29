@@ -1,0 +1,25 @@
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\MySql.Data.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\BouncyCastle.Crypto.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\Renci.SshNet.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.vbprojAssemblyReference.cache
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Form1.resources
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Resources.resources
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.vbproj.GenerateResource.cache
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.vbproj.CoreCompileInputs.cache
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.vbproj.CopyComplete
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.vbproj.ResolveComReference.cache
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Form2.resources
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Form3.resources
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.exe.config
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.exe
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.pdb
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.xml
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.exe
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.xml
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.pdb
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.exe.manifest
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\База заявок РРЦ.application
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.TrustInfo.xml
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.exe.manifest
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.application
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Form4.resources

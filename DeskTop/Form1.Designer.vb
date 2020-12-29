@@ -108,10 +108,10 @@ Partial Class Form1
         '
         'НастройкиToolStripMenuItem
         '
-        Me.НастройкиToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.gear_icon_icons_com_70125
+        Me.НастройкиToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.settings_cogwheel_button_icon_icons_com_72559
         Me.НастройкиToolStripMenuItem.Name = "НастройкиToolStripMenuItem"
         Me.НастройкиToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.НастройкиToolStripMenuItem.Text = "Настройки"
+        Me.НастройкиToolStripMenuItem.Text = "Параметры"
         '
         'СправкаToolStripMenuItem
         '
@@ -201,10 +201,11 @@ Partial Class Form1
         'Message
         '
         Me.Message.AutoSize = True
-        Me.Message.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Message.Location = New System.Drawing.Point(326, 585)
+        Me.Message.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.Message.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Message.Location = New System.Drawing.Point(331, 585)
         Me.Message.Name = "Message"
-        Me.Message.Size = New System.Drawing.Size(49, 16)
+        Me.Message.Size = New System.Drawing.Size(45, 15)
         Me.Message.TabIndex = 35
         Me.Message.Text = "Label1"
         Me.Message.Visible = False
