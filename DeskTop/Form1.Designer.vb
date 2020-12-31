@@ -202,7 +202,7 @@ Partial Class Form1
         '
         Me.Message.AutoSize = True
         Me.Message.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.Message.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.Message.ForeColor = System.Drawing.Color.Black
         Me.Message.Location = New System.Drawing.Point(331, 585)
         Me.Message.Name = "Message"
         Me.Message.Size = New System.Drawing.Size(45, 15)
@@ -498,7 +498,7 @@ Partial Class Form1
         '
         'Timer1
         '
-        Me.Timer1.Interval = 6000
+        Me.Timer1.Interval = 4000
         '
         'Form1
         '

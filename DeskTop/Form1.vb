@@ -13,14 +13,12 @@ Public Class Form1
     Private ID As String = ""
     Private intRow As Integer = 0
 
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim file = My.Application.Info.DirectoryPath & ".\host.ini"
         If IO.File.Exists(file) = True Then
-            ResetMe()
             LoadData()
+            ResetMe()
         Else
             Form4.Show()
             Close()
@@ -36,7 +34,10 @@ Public Class Form1
 
 
     Private Sub ResetMe()
-        Me.ID = ""
+
+        MainDataGridView.ClearSelection()
+
+        ID = ""
 
         NameText.Text = ""
 
@@ -50,15 +51,14 @@ Public Class Form1
             StatusCombo.SelectedIndex = 0
         End If
 
-        SaveBtn.Text = "Обновить"
-        DeleteBtn.Text = "Удалить"
-
         SearchText.Clear()
         SearchText.Select()
 
         MyDate.ResetText()
         StartDate.ResetText()
         EndDate.ResetText()
+
+
 
     End Sub
 
@@ -177,9 +177,7 @@ Public Class Form1
 
             If e.RowIndex <> -1 Then
 
-                Me.ID = Convert.ToString(dgv.CurrentRow.Cells(0).Value).Trim()
-                'SaveBtn.Text = "Обновить " & Me.ID
-                'DeleteBtn.Text = "Удалить " & Me.ID
+                ID = Convert.ToString(dgv.CurrentRow.Cells(0).Value).Trim()
 
                 MyDate.Text = Convert.ToString(dgv.CurrentRow.Cells(1).Value).Trim()
                 NameText.Text = Convert.ToString(dgv.CurrentRow.Cells(2).Value).Trim()
@@ -213,8 +211,10 @@ Public Class Form1
 
         ResetMe()
 
+        Timer1.Stop()
+
         Message.Visible = True
-        Message.Text = "Данные успешно добавлены"
+        Message.Text = "Данные успешно добавлены."
 
         Timer1.Start()
 
@@ -249,7 +249,7 @@ Public Class Form1
         Timer1.Stop()
 
         Message.Visible = True
-        Message.Text = "Данные успешно обновлены"
+        Message.Text = "Данные успешно обновлены."
 
         Timer1.Start()
 
@@ -268,20 +268,30 @@ Public Class Form1
             Exit Sub
         End If
 
-        SQL = "DELETE FROM main WHERE id = @ID"
 
-        Execute(SQL, "Delete")
 
-        LoadData()
+        If MessageBox.Show("Вы действительно хотите удалить данную запись?", "Подтверждение удаления", MessageBoxButtons.YesNo) = vbYes Then
+            SQL = "DELETE FROM main WHERE id = @ID"
 
-        ResetMe()
+            Execute(SQL, "Delete")
 
-        Timer1.Stop()
+            LoadData()
 
-        Message.Visible = True
-        Message.Text = "Данные успешно удалены"
+            ResetMe()
 
-        Timer1.Start()
+            Timer1.Stop()
+
+            Message.Visible = True
+            Message.Text = "Данные успешно удалены."
+
+            Timer1.Start()
+        Else
+            LoadData()
+
+            ResetMe()
+        End If
+
+
 
     End Sub
 
@@ -395,4 +405,29 @@ Public Class Form1
     Private Sub НастройкиToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles НастройкиToolStripMenuItem.Click
         Form4.ShowDialog()
     End Sub
+
+    Private Sub MainDataGridView_MouseDown(sender As Object, e As MouseEventArgs) Handles MainDataGridView.MouseDown
+        MainDataGridView.ClearSelection()
+
+        ID = ""
+
+        NameText.Text = ""
+
+        If UnitCombo.Items.Count > 0 Then
+            UnitCombo.SelectedIndex = 0
+        End If
+        If ExecutorCombo.Items.Count > 0 Then
+            ExecutorCombo.SelectedIndex = 0
+        End If
+        If StatusCombo.Items.Count > 0 Then
+            StatusCombo.SelectedIndex = 0
+        End If
+
+        SearchText.Clear()
+        SearchText.Select()
+
+        StartDate.ResetText()
+        EndDate.ResetText()
+    End Sub
+
 End Class
