@@ -23,19 +23,16 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ФайлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ЭкспортВExcelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ПечатьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.НастройкиToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.РадиоToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.СправкаToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ПомощьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ОПрограммеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.MyPlayer = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Message = New System.Windows.Forms.Label()
@@ -65,9 +62,26 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ЭкспортВExcelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПечатьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.НастройкиToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ВЫКЛЮЧИТЬToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПомощьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ОПрограммеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.MyPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.MainDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -75,7 +89,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ФайлToolStripMenuItem, Me.СправкаToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ФайлToolStripMenuItem, Me.РадиоToolStripMenuItem, Me.СправкаToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(854, 24)
@@ -90,28 +104,12 @@ Partial Class Form1
         Me.ФайлToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
         Me.ФайлToolStripMenuItem.Text = "Файл"
         '
-        'ЭкспортВExcelToolStripMenuItem
+        'РадиоToolStripMenuItem
         '
-        Me.ЭкспортВExcelToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.excel_theapplication_3130
-        Me.ЭкспортВExcelToolStripMenuItem.Name = "ЭкспортВExcelToolStripMenuItem"
-        Me.ЭкспортВExcelToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ЭкспортВExcelToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.ЭкспортВExcelToolStripMenuItem.Text = "Экспорт в Excel"
-        '
-        'ПечатьToolStripMenuItem
-        '
-        Me.ПечатьToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.print_118761
-        Me.ПечатьToolStripMenuItem.Name = "ПечатьToolStripMenuItem"
-        Me.ПечатьToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.ПечатьToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.ПечатьToolStripMenuItem.Text = "Печать"
-        '
-        'НастройкиToolStripMenuItem
-        '
-        Me.НастройкиToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.settings_cogwheel_button_icon_icons_com_72559
-        Me.НастройкиToolStripMenuItem.Name = "НастройкиToolStripMenuItem"
-        Me.НастройкиToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
-        Me.НастройкиToolStripMenuItem.Text = "Параметры"
+        Me.РадиоToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem4, Me.ToolStripMenuItem5, Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem8, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10, Me.ToolStripMenuItem11, Me.ВЫКЛЮЧИТЬToolStripMenuItem})
+        Me.РадиоToolStripMenuItem.Name = "РадиоToolStripMenuItem"
+        Me.РадиоToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.РадиоToolStripMenuItem.Text = "Радио"
         '
         'СправкаToolStripMenuItem
         '
@@ -120,22 +118,6 @@ Partial Class Form1
         Me.СправкаToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.СправкаToolStripMenuItem.Text = "Справка"
         '
-        'ПомощьToolStripMenuItem
-        '
-        Me.ПомощьToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.question
-        Me.ПомощьToolStripMenuItem.Name = "ПомощьToolStripMenuItem"
-        Me.ПомощьToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.ПомощьToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ПомощьToolStripMenuItem.Text = "Помощь"
-        '
-        'ОПрограммеToolStripMenuItem
-        '
-        Me.ОПрограммеToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.information
-        Me.ОПрограммеToolStripMenuItem.Name = "ОПрограммеToolStripMenuItem"
-        Me.ОПрограммеToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2
-        Me.ОПрограммеToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
-        Me.ОПрограммеToolStripMenuItem.Text = "О программе"
-        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
@@ -143,12 +125,13 @@ Partial Class Form1
         Me.TabControl1.Location = New System.Drawing.Point(0, 24)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(854, 633)
+        Me.TabControl1.Size = New System.Drawing.Size(854, 690)
         Me.TabControl1.TabIndex = 1
         '
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.GhostWhite
+        Me.TabPage1.Controls.Add(Me.MyPlayer)
         Me.TabPage1.Controls.Add(Me.Label7)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.Message)
@@ -176,14 +159,24 @@ Partial Class Form1
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(846, 607)
+        Me.TabPage1.Size = New System.Drawing.Size(846, 664)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "База данных"
+        '
+        'MyPlayer
+        '
+        Me.MyPlayer.Enabled = True
+        Me.MyPlayer.Location = New System.Drawing.Point(370, 19)
+        Me.MyPlayer.Name = "MyPlayer"
+        Me.MyPlayer.OcxState = CType(resources.GetObject("MyPlayer.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.MyPlayer.Size = New System.Drawing.Size(283, 126)
+        Me.MyPlayer.TabIndex = 38
+        Me.MyPlayer.Visible = False
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(572, 39)
+        Me.Label7.Location = New System.Drawing.Point(659, 42)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(84, 13)
         Me.Label7.TabIndex = 37
@@ -192,7 +185,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(565, 13)
+        Me.Label1.Location = New System.Drawing.Point(659, 3)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 13)
         Me.Label1.TabIndex = 36
@@ -203,7 +196,7 @@ Partial Class Form1
         Me.Message.AutoSize = True
         Me.Message.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Message.ForeColor = System.Drawing.Color.Black
-        Me.Message.Location = New System.Drawing.Point(331, 585)
+        Me.Message.Location = New System.Drawing.Point(331, 640)
         Me.Message.Name = "Message"
         Me.Message.Size = New System.Drawing.Size(45, 15)
         Me.Message.TabIndex = 35
@@ -217,7 +210,7 @@ Partial Class Form1
         Me.SearchDateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.AliceBlue
         Me.SearchDateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SearchDateBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.SearchDateBtn.Location = New System.Drawing.Point(662, 85)
+        Me.SearchDateBtn.Location = New System.Drawing.Point(662, 111)
         Me.SearchDateBtn.Name = "SearchDateBtn"
         Me.SearchDateBtn.Size = New System.Drawing.Size(85, 34)
         Me.SearchDateBtn.TabIndex = 34
@@ -226,14 +219,14 @@ Partial Class Form1
         '
         'EndDate
         '
-        Me.EndDate.Location = New System.Drawing.Point(662, 32)
+        Me.EndDate.Location = New System.Drawing.Point(662, 59)
         Me.EndDate.Name = "EndDate"
         Me.EndDate.Size = New System.Drawing.Size(176, 20)
         Me.EndDate.TabIndex = 33
         '
         'StartDate
         '
-        Me.StartDate.Location = New System.Drawing.Point(662, 6)
+        Me.StartDate.Location = New System.Drawing.Point(662, 19)
         Me.StartDate.Name = "StartDate"
         Me.StartDate.Size = New System.Drawing.Size(176, 20)
         Me.StartDate.TabIndex = 33
@@ -256,7 +249,7 @@ Partial Class Form1
         Me.SearchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SearchBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.SearchBtn.ForeColor = System.Drawing.Color.Black
-        Me.SearchBtn.Location = New System.Drawing.Point(753, 85)
+        Me.SearchBtn.Location = New System.Drawing.Point(753, 111)
         Me.SearchBtn.Name = "SearchBtn"
         Me.SearchBtn.Size = New System.Drawing.Size(85, 34)
         Me.SearchBtn.TabIndex = 2
@@ -274,7 +267,7 @@ Partial Class Form1
         Me.LoadBtn.ForeColor = System.Drawing.Color.Black
         Me.LoadBtn.Location = New System.Drawing.Point(188, 85)
         Me.LoadBtn.Name = "LoadBtn"
-        Me.LoadBtn.Size = New System.Drawing.Size(176, 34)
+        Me.LoadBtn.Size = New System.Drawing.Size(176, 60)
         Me.LoadBtn.TabIndex = 3
         Me.LoadBtn.Text = "Загрузить базу"
         Me.LoadBtn.UseVisualStyleBackColor = False
@@ -289,7 +282,7 @@ Partial Class Form1
         Me.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DeleteBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.DeleteBtn.ForeColor = System.Drawing.Color.Black
-        Me.DeleteBtn.Location = New System.Drawing.Point(745, 573)
+        Me.DeleteBtn.Location = New System.Drawing.Point(745, 628)
         Me.DeleteBtn.Name = "DeleteBtn"
         Me.DeleteBtn.Size = New System.Drawing.Size(95, 32)
         Me.DeleteBtn.TabIndex = 25
@@ -299,7 +292,7 @@ Partial Class Form1
         'SearchText
         '
         Me.SearchText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.SearchText.Location = New System.Drawing.Point(662, 58)
+        Me.SearchText.Location = New System.Drawing.Point(662, 85)
         Me.SearchText.Name = "SearchText"
         Me.SearchText.Size = New System.Drawing.Size(176, 20)
         Me.SearchText.TabIndex = 1
@@ -314,7 +307,7 @@ Partial Class Form1
         Me.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.SaveBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.SaveBtn.ForeColor = System.Drawing.Color.Black
-        Me.SaveBtn.Location = New System.Drawing.Point(644, 573)
+        Me.SaveBtn.Location = New System.Drawing.Point(644, 628)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(95, 32)
         Me.SaveBtn.TabIndex = 24
@@ -331,7 +324,7 @@ Partial Class Form1
         Me.AddBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.AddBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.AddBtn.ForeColor = System.Drawing.Color.Black
-        Me.AddBtn.Location = New System.Drawing.Point(543, 573)
+        Me.AddBtn.Location = New System.Drawing.Point(543, 628)
         Me.AddBtn.Name = "AddBtn"
         Me.AddBtn.Size = New System.Drawing.Size(95, 32)
         Me.AddBtn.TabIndex = 23
@@ -367,7 +360,7 @@ Partial Class Form1
         '
         Me.StatusStrip1.BackColor = System.Drawing.Color.Transparent
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Today, Me.RecordsCount, Me.Export, Me.Progress})
-        Me.StatusStrip1.Location = New System.Drawing.Point(3, 582)
+        Me.StatusStrip1.Location = New System.Drawing.Point(3, 639)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.Size = New System.Drawing.Size(840, 22)
         Me.StatusStrip1.SizingGrip = False
@@ -405,27 +398,27 @@ Partial Class Form1
         Me.MainDataGridView.AllowUserToDeleteRows = False
         Me.MainDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.MainDataGridView.BackgroundColor = System.Drawing.Color.SteelBlue
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.MainDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.MainDataGridView.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.MainDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.MainDataGridView.DefaultCellStyle = DataGridViewCellStyle2
-        Me.MainDataGridView.Location = New System.Drawing.Point(6, 125)
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.MainDataGridView.DefaultCellStyle = DataGridViewCellStyle8
+        Me.MainDataGridView.Location = New System.Drawing.Point(6, 151)
         Me.MainDataGridView.Name = "MainDataGridView"
         Me.MainDataGridView.ReadOnly = True
-        Me.MainDataGridView.Size = New System.Drawing.Size(834, 442)
+        Me.MainDataGridView.Size = New System.Drawing.Size(834, 471)
         Me.MainDataGridView.TabIndex = 26
         '
         'NameText
@@ -500,12 +493,129 @@ Partial Class Form1
         '
         Me.Timer1.Interval = 4000
         '
+        'ЭкспортВExcelToolStripMenuItem
+        '
+        Me.ЭкспортВExcelToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.excel_theapplication_3130
+        Me.ЭкспортВExcelToolStripMenuItem.Name = "ЭкспортВExcelToolStripMenuItem"
+        Me.ЭкспортВExcelToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.ЭкспортВExcelToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ЭкспортВExcelToolStripMenuItem.Text = "Экспорт в Excel"
+        '
+        'ПечатьToolStripMenuItem
+        '
+        Me.ПечатьToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.print_118761
+        Me.ПечатьToolStripMenuItem.Name = "ПечатьToolStripMenuItem"
+        Me.ПечатьToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.ПечатьToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.ПечатьToolStripMenuItem.Text = "Печать"
+        '
+        'НастройкиToolStripMenuItem
+        '
+        Me.НастройкиToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.settings_cogwheel_button_icon_icons_com_72559
+        Me.НастройкиToolStripMenuItem.Name = "НастройкиToolStripMenuItem"
+        Me.НастройкиToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
+        Me.НастройкиToolStripMenuItem.Size = New System.Drawing.Size(198, 22)
+        Me.НастройкиToolStripMenuItem.Text = "Настройка IP"
+        '
+        'ToolStripMenuItem2
+        '
+        Me.ToolStripMenuItem2.Image = Global.DeskTop.My.Resources.Resources.logo_russkoe_radio
+        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem2.Text = "Русское Радио"
+        '
+        'ToolStripMenuItem3
+        '
+        Me.ToolStripMenuItem3.Image = Global.DeskTop.My.Resources.Resources.radiomarusya
+        Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem3.Text = "Маруся FM"
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.Image = Global.DeskTop.My.Resources.Resources.Novoe_Radio_98_4FM_Logo_350x350
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem4.Text = "Новое Радио"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.Image = Global.DeskTop.My.Resources.Resources.EuropaPlus
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem5.Text = "Европа Плюс"
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.Image = Global.DeskTop.My.Resources.Resources.Dfm_logo
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem6.Text = "DFM"
+        '
+        'ToolStripMenuItem7
+        '
+        Me.ToolStripMenuItem7.Image = Global.DeskTop.My.Resources.Resources.logo_radio_nrj
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem7.Text = "Радио ENERGY"
+        '
+        'ToolStripMenuItem8
+        '
+        Me.ToolStripMenuItem8.Image = Global.DeskTop.My.Resources.Resources.radio_vanya
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem8.Text = "Радио Ваня"
+        '
+        'ToolStripMenuItem9
+        '
+        Me.ToolStripMenuItem9.Image = Global.DeskTop.My.Resources.Resources.record
+        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem9.Text = "Радио Рекорд"
+        '
+        'ToolStripMenuItem10
+        '
+        Me.ToolStripMenuItem10.Image = Global.DeskTop.My.Resources.Resources.spdeep
+        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem10.Text = "SOUNDPARK DEEP"
+        '
+        'ToolStripMenuItem11
+        '
+        Me.ToolStripMenuItem11.Image = Global.DeskTop.My.Resources.Resources.hit_fm
+        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(191, 22)
+        Me.ToolStripMenuItem11.Text = "Хит FM"
+        '
+        'ВЫКЛЮЧИТЬToolStripMenuItem
+        '
+        Me.ВЫКЛЮЧИТЬToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.disable_remove_delete_exit_close_11881
+        Me.ВЫКЛЮЧИТЬToolStripMenuItem.Name = "ВЫКЛЮЧИТЬToolStripMenuItem"
+        Me.ВЫКЛЮЧИТЬToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.ВЫКЛЮЧИТЬToolStripMenuItem.Text = "ВЫКЛЮЧИТЬ РАДИО"
+        '
+        'ПомощьToolStripMenuItem
+        '
+        Me.ПомощьToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.question
+        Me.ПомощьToolStripMenuItem.Name = "ПомощьToolStripMenuItem"
+        Me.ПомощьToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.ПомощьToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ПомощьToolStripMenuItem.Text = "Помощь"
+        '
+        'ОПрограммеToolStripMenuItem
+        '
+        Me.ОПрограммеToolStripMenuItem.Image = Global.DeskTop.My.Resources.Resources.information
+        Me.ОПрограммеToolStripMenuItem.Name = "ОПрограммеToolStripMenuItem"
+        Me.ОПрограммеToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2
+        Me.ОПрограммеToolStripMenuItem.Size = New System.Drawing.Size(168, 22)
+        Me.ОПрограммеToolStripMenuItem.Text = "О программе"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(854, 657)
+        Me.ClientSize = New System.Drawing.Size(854, 714)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -520,6 +630,7 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        CType(Me.MyPlayer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         CType(Me.MainDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
@@ -567,4 +678,17 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents НастройкиToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents РадиоToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem11 As ToolStripMenuItem
+    Friend WithEvents ВЫКЛЮЧИТЬToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MyPlayer As AxWMPLib.AxWindowsMediaPlayer
 End Class

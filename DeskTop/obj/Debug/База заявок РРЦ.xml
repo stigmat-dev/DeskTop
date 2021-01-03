@@ -22,6 +22,21 @@
   обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
 </summary>
 </member>
+<member name="P:DeskTop.My.Resources.Resources.Dfm_logo">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.disable_remove_delete_exit_close_11881">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.EuropaPlus">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DeskTop.My.Resources.Resources.excel_theapplication_3130">
 <summary>
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
@@ -32,12 +47,32 @@
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:DeskTop.My.Resources.Resources.hit_fm">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DeskTop.My.Resources.Resources.information">
 <summary>
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:DeskTop.My.Resources.Resources.logo_radio_nrj">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.logo_russkoe_radio">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DeskTop.My.Resources.Resources.medicine_icon_icons_com_54386">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.Novoe_Radio_98_4FM_Logo_350x350">
 <summary>
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
 </summary>
@@ -52,7 +87,32 @@
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:DeskTop.My.Resources.Resources.radio_vanya">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.radiomarusya">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.Radiotower_radi_13606">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.record">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DeskTop.My.Resources.Resources.settings_cogwheel_button_icon_icons_com_72559">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DeskTop.My.Resources.Resources.spdeep">
 <summary>
   Поиск локализованного ресурса типа System.Drawing.Bitmap.
 </summary>

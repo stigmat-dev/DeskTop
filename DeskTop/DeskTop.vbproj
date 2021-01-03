@@ -27,7 +27,7 @@
     <MapFileExtensions>false</MapFileExtensions>
     <PublisherName>РРЦ МЗ ДНР</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationRevision>14</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -197,6 +197,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="Microsoft.Office.Core">
       <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
       <VersionMajor>2</VersionMajor>
@@ -224,6 +232,15 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\medicine_icon-icons.com_54386.png" />
@@ -237,6 +254,18 @@
     <None Include="Resources\excel_theapplication_3130.png" />
     <None Include="Resources\gear_icon-icons.com_70125.png" />
     <None Include="Resources\settings-cogwheel-button_icon-icons.com_72559.png" />
+    <None Include="Resources\logo-russkoe-radio.png" />
+    <None Include="Resources\radiomarusya.jpg" />
+    <None Include="Resources\Novoe-Radio-98.4FM-Logo-350x350.jpg" />
+    <None Include="Resources\EuropaPlus.png" />
+    <None Include="Resources\Dfm_logo.jpg" />
+    <None Include="Resources\logo-radio-nrj.jpg" />
+    <None Include="Resources\radio-vanya.png" />
+    <None Include="Resources\record.png" />
+    <None Include="Resources\spdeep.jpg" />
+    <None Include="Resources\hit-fm.png" />
+    <None Include="Resources\Radiotower_radi_13606.png" />
+    <None Include="Resources\disable_remove_delete_exit_close_11881.png" />
     <Content Include="style.css" />
   </ItemGroup>
   <ItemGroup>

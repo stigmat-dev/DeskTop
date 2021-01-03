@@ -10,6 +10,7 @@ Public Class Form1
     Dim desktop As String = My.Computer.FileSystem.SpecialDirectories.Desktop
 
 
+
     Private ID As String = ""
     Private intRow As Integer = 0
 
@@ -430,4 +431,58 @@ Public Class Form1
         EndDate.ResetText()
     End Sub
 
+    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://r163-172-186-238.relay.radiotoolkit.com:30003/spdeep"
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://rusradio.hostingradio.ru/rusradio96.aacp"
+    End Sub
+
+    Private Sub ВЫКЛЮЧИТЬToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ВЫКЛЮЧИТЬToolStripMenuItem.Click
+        MyPlayer.Visible = False
+        MyPlayer.URL = ""
+    End Sub
+
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://radio-holding.ru:9433/marusya_default"
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://icecast-newradio.cdnvideo.ru/newradio3"
+    End Sub
+
+    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://europaplus.hostingradio.ru:8014/europaplus320.mp3"
+    End Sub
+
+    Private Sub ToolStripMenuItem6_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem6.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://dfm.hostingradio.ru/dfm96.aacp"
+    End Sub
+
+    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://pub0301.101.ru:8443/stream/air/mp3/256/99"
+    End Sub
+
+    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://radiokrug.ru/radio/vanya/icecast.audio"
+    End Sub
+
+    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://air.radiorecord.ru:805/rr_320"
+    End Sub
+
+    Private Sub ToolStripMenuItem11_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem11.Click
+        MyPlayer.Visible = True
+        MyPlayer.URL = "https://hitfm.hostingradio.ru/hitfm96.aacp"
+    End Sub
 End Class

@@ -23,3 +23,7 @@ D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.Tru
 D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.exe.manifest
 D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\База заявок РРЦ.application
 D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\DeskTop.Form4.resources
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\Interop.WMPLib.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\bin\Debug\AxInterop.WMPLib.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\Interop.WMPLib.dll
+D:\IT\VB.NET\Projects\DeskTop\DeskTop\obj\Debug\AxInterop.WMPLib.dll

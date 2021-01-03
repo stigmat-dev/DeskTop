@@ -63,6 +63,36 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Dfm_logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Dfm_logo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property disable_remove_delete_exit_close_11881() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("disable_remove_delete_exit_close_11881", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property EuropaPlus() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("EuropaPlus", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property excel_theapplication_3130() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("excel_theapplication_3130", resourceCulture)
@@ -83,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property hit_fm() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hit-fm", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property information() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("information", resourceCulture)
@@ -93,9 +133,39 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property logo_radio_nrj() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logo-radio-nrj", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property logo_russkoe_radio() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("logo-russkoe-radio", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property medicine_icon_icons_com_54386() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("medicine_icon-icons.com_54386", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Novoe_Radio_98_4FM_Logo_350x350() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Novoe-Radio-98.4FM-Logo-350x350", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -123,9 +193,59 @@ Namespace My.Resources
         '''<summary>
         '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property radio_vanya() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("radio-vanya", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property radiomarusya() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("radiomarusya", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Radiotower_radi_13606() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Radiotower_radi_13606", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property record() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("record", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property settings_cogwheel_button_icon_icons_com_72559() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("settings-cogwheel-button_icon-icons.com_72559", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property spdeep() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("spdeep", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
